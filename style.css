@@ -48,6 +48,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+#imagenprincipal img{
+    width: 100vh;
+}
+
 footer div{
-    display: grid;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
