@@ -24,3 +24,30 @@ nav ul{
     max-height: 100vh; /* Altura máxima de la pantalla */
     overflow-y: auto; /* Barra de desplazamiento vertical si es necesario */
 }
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Cambio a disposición horizontal */
+        max-height: none; /* Elimina la altura máxima */
+        overflow-y: visible; /* Desactiva la barra de desplazamiento vertical */
+    }
+}
+
+nav img{
+    width: 15%;
+    height: auto;
+}
+
+nav ul li a {
+    color: #090000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer div{
+    display: grid;
+}
