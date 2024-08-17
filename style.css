@@ -17,6 +17,8 @@ nav{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: rgb(17,13,1,.8);
     color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logotipo{
@@ -58,11 +60,22 @@ nav a:hover {
     text-decoration: underline;
 }
 
+#insignia p, footer h2{
+    text-transform: uppercase;
+
+}
+
 #insignia, 
 #lista{
-    margin: 25px auto;
-    
     width: fit-content;
+    margin-left: 2%;
+}
+
+#lista{
+    align-self: center;
+    margin-left: auto;
+    margin-right: 3%;
+    font-size: 150%;
 }
 
 #imagenprincipal img{
@@ -79,7 +92,9 @@ nav a:hover {
 }
 
 #descripcion,
-#fotofilandia {
+#fotofilandia,
+#pista,
+#fotos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,13 +109,31 @@ nav a:hover {
     justify-content: center;
 }
 
+#fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
 #fotofilandia{
     margin-bottom: 50px;
 }
 
 #descripcion p,
-#fotofilandia img {
+#fotofilandia img,
+#pista p
+#fotos{
     max-width: 80%; /* Ajusta el ancho al 80% del contenedor */
+}
+
+#fotos img{
+    max-width: 25%;
+}
+
+#pista p{
+    padding: 50px;
+    border-bottom: 1px solid black;
 }
 
 #fotofilandia img {
@@ -119,12 +152,16 @@ footer{
 footer div{
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
     background-color: rgb(152, 231, 204);
 }
 
 .fragmento{
     display: grid;
+    color: #5d6469;
+}
+
+.verde{
+    color: #076313;
 }
 
 
