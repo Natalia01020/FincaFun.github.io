@@ -6,7 +6,7 @@ html,body{
 }
 
 header{
-    position: fixed; /*Va hasta donde va su padre, su padre en este caso es body*/
+    position: sticky; /*Va hasta donde va su padre, su padre en este caso es body*/
     top:0px;
     width: 100vw;
 }
@@ -61,11 +61,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-#insignia p, footer h2{
-    text-transform: uppercase;
-}
-
 #insignia p{
+    text-transform: uppercase;
     font-size: normal;
 }
 
@@ -81,11 +78,7 @@ nav a:hover {
     margin-right: 3%;
 }
 
-#imagenprincipal img{
-    width: 100vw;
-}
-
-#eslogan{
+#nombre{
     font-family: "Rubik Marker Hatch";
     text-align: center;
     font-size: 200%;
@@ -94,9 +87,7 @@ nav a:hover {
     color: #076313;
 }
 
-#descripcion,
-#fotofilandia,
-#pista {
+#descripcion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,92 +98,44 @@ nav a:hover {
     font-family: "Montserrat Alternates";
     color: #5d6469;
     line-height: 2; /*Alto de la línea*/
-    font-weight: 500; /*700 corresponde a bold*/
+    font-weight: 700; /*700 corresponde a bold*/
     justify-content: center;
-}
+}    
 
-#fotos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 3%;
-    padding-top: 2%;
-}
-
-#descripcion p,
-#pista p{
+#descripcion p{
     max-width: 80%; /* Ajusta el ancho al 80% del contenedor */
     padding: 0; /* Elimina el padding adicional */
     margin: 0; /* Elimina el margen adicional */
 }
 
-#fotos img{
-    max-width: 25%;
-}
-
-#pista p{
-    max-width: 80%; /* Igual que #fotofilandia y #descripcion */
-    border-bottom: 1px solid black; /* Línea debajo del texto */
-    padding-bottom: 10px; /* Ajuste de padding */
-}
-
-#fotofilandia img {
-    max-width: 80%;
-    height: auto;
-}
-
-p{
-    word-wrap: break-word; /* palabras que sean demasiado largas se deben cortar, de manera que quepan en el ancho disponible de la caja. */
-}
-
-footer{
-    width:100vw;
-    background-color: rgb(152, 231, 204);
-    padding-top: 50px; /* Ajusta el espacio superior para que el contenido se vea bien debajo de la forma */
-    clip-path: polygon(0 100%, 0 30%, 10% 40%, 20% 20%, 30% 40%, 40% 10%, 50% 40%, 60% 20%, 70% 40%, 80% 10%, 90% 40%, 100% 30%, 100% 100%);
-    position: relative;
-}
-
-.contenedor {
-    padding-top: 50px; /* Asegura que el contenido no se superponga con las montañas */
-    padding-bottom: 20px;
-}
-
-
-footer div{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(152, 231, 204);
-}
-
-.fragmento{
+.separacion{
     display: grid;
-    color: #5d6469;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center;
+    padding:3% 5% 1%;
 }
 
-.verde{
+.imagen{
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen img{
+    width: 80%;
+    height:auto;
+}
+
+h1{
+    text-align: center;
     color: #076313;
 }
 
-#follow{
-    display: flex;
-    justify-content: center;
+.separacion p,
+.separacion li,
+.separacion table{
+    font-family: "Montserrat Alternates";
+    color: #5d6469;
+    line-height: 2; /*Alto de la línea*/
+    font-weight: 600; /*700 corresponde a bold*/
 }
-
-#follow button{
-    color:white;
-    padding:8px;
-    border-radius: 5px;
-    background-color: rgb(141, 9, 91);
-    font-weight: bold;
-    border: none;
-}
-
-#follow button:hover{
-    background-color: rgb(3, 148, 206);
-}
-
-nav button{
-    border-radius: 50%;
-}
-
